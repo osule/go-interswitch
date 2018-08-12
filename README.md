@@ -21,6 +21,12 @@ for transacting payments using the Interswitch REST API.
     paymentMethods := client.PaymentMethods()
 
 
+## Testing
+
+In your terminal run
+
+    ./test.bash
+
 
 # Contribution guidelines
 
