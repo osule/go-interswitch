@@ -5,7 +5,7 @@ for transacting payments using the Interswitch REST API.
 
 # Usage
 
-## Get Payment Methodss
+## Get Payment Methods
 
     conf := interswitch.Conf{
         endpoint: "https://sandbox.interswitchng.com/",
