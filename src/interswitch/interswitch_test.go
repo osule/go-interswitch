@@ -18,11 +18,7 @@ var conf = interswitch.Conf{
 var client = interswitch.Client(&conf)
 
 func TestPaymentMethods(t *testing.T) {
-	// Different allocations should not be equal.
-	
-       
-
         if  _, err := client.PaymentMethods(); err != nil {
-                t.Errorf("Payment Methods failed: %v", err)
+                t.Errorf("client.PaymentMethods failed: %v", err)
         }
 }
