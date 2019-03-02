@@ -17,15 +17,15 @@ for transacting payments using the Interswitch REST API.
         version: "4.6"
     }
 
-    client := interswitch.Client(&conf)
-    paymentMethods := client.PaymentMethods()
+    c, err := interswitch.ClientUsingConf(&conf)
+    p := client.PaymentMethods()
 
 
 ## Testing
 
 In your terminal run
 
-    ./test.bash
+    make test
 
 
 # Contribution guidelines
